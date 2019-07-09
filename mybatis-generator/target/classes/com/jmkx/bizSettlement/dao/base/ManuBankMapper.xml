@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.ManuBankMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.ManuBank">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="manage_main_id" jdbcType="VARCHAR" property="manageMainId" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="open_bank" jdbcType="VARCHAR" property="openBank" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="post_code" jdbcType="VARCHAR" property="postCode" />
+    <result column="credit_code" jdbcType="VARCHAR" property="creditCode" />
+    <result column="is_default" jdbcType="BIT" property="isDefault" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

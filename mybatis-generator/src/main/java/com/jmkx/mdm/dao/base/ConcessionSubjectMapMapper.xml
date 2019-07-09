@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.mdm.dao.base.ConcessionSubjectMapMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.mdm.pojo.base.DO.ConcessionSubjectMap">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="concession_type" jdbcType="VARCHAR" property="concessionType" />
+    <result column="subject_code" jdbcType="VARCHAR" property="subjectCode" />
+    <result column="subject_name" jdbcType="VARCHAR" property="subjectName" />
+    <result column="clearing_method" jdbcType="VARCHAR" property="clearingMethod" />
+    <result column="ramark" jdbcType="VARCHAR" property="ramark" />
+    <result column="maker_id" jdbcType="VARCHAR" property="makerId" />
+    <result column="maker" jdbcType="VARCHAR" property="maker" />
+    <result column="make_date" jdbcType="TIMESTAMP" property="makeDate" />
+    <result column="modify_id" jdbcType="VARCHAR" property="modifyId" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="check_state" jdbcType="TINYINT" property="checkState" />
+    <result column="check_opinion" jdbcType="VARCHAR" property="checkOpinion" />
+    <result column="check_id" jdbcType="VARCHAR" property="checkId" />
+    <result column="checker" jdbcType="VARCHAR" property="checker" />
+    <result column="check_date" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

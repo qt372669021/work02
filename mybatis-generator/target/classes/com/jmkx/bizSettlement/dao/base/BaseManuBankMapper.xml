@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.BaseManuBankMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.BaseManuBank">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="bank_id" jdbcType="VARCHAR" property="bankId" />
+    <result column="manu_id" jdbcType="VARCHAR" property="manuId" />
+    <result column="open_name" jdbcType="VARCHAR" property="openName" />
+    <result column="open_bank" jdbcType="VARCHAR" property="openBank" />
+    <result column="bank_num" jdbcType="VARCHAR" property="bankNum" />
+    <result column="maker_id" jdbcType="VARCHAR" property="makerId" />
+    <result column="maker" jdbcType="VARCHAR" property="maker" />
+    <result column="make_date" jdbcType="TIMESTAMP" property="makeDate" />
+    <result column="modify_id" jdbcType="VARCHAR" property="modifyId" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

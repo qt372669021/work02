@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+	<!-- <classPathEntry location="D:\study\jar\mysql-connector-java-5.6-bin.jar" /> -->
+	
+	<!-- 引入配置文件 -->  
+    <properties resource="jdbc.properties"/>
+	<context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
+		<!-- <commentGenerator> -->
+		<!-- <property name="suppressDate" value="true" /> -->
+		
+		<!-- 是否去除自动生成的注释 true 是  false:否 -->  
+		<!-- <property name="suppressAllComments" value="true" /> -->
+		<!-- </commentGenerator> -->
+
+		<plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+			<property name="mappers" value="com.jmkx.common.base.IBaseMapper" />
+			<!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+			<property name="caseSensitive" value="true" />
+		</plugin>
+		
+		<!--配置连接数据库的参数-->
+		<jdbcConnection driverClass="${jdbc.dirverClass}"
+						connectionURL="${jdbc.url}" 
+						userId="${jdbc.username}"
+						password="${jdbc.password}" />
+			
+		<!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和 
+			NUMERIC 类型解析为java.math.BigDecimal -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!--生成Model类存放位置 -->
+		<javaModelGenerator targetProject="src/main/java" targetPackage="com.jmkx.drm.pojo.base.DO">
+			<property name="enableSubPackages" value="true" />
+			
+			<!-- 从数据库中返回的值被清理前后的空格 -->
+			<property name="trimStrings" value="true" />
+			<property name="rootClass" value="com.jmkx.common.base.BaseEntity" />
+		</javaModelGenerator>
+
+		<!--生成xml映射文件存放位置 -->
+		<sqlMapGenerator targetProject="src/main/java" targetPackage="com.jmkx.drm.dao.base">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!--生成Dao类存放位置 -->
+		<javaClientGenerator targetProject="src/main/java" targetPackage="com.jmkx.drm.dao.base" type="XMLMAPPER">
+			<!-- 可以为所有生成的接口添加一个父接口-->
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+		<!--配置表和实体类名，过滤时间戳ts-->
+ 		<table tableName="t_person_all" domainObjectName="PersonAll"> 
+ 			<ignoreColumn column="ts" delimitedColumnName=""/>  
+		</table>  
+		
+	</context>
+</generatorConfiguration>

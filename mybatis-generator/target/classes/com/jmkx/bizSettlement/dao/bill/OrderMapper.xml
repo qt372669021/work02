@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.bill.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.bill.DO.Order">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="order_type" jdbcType="TINYINT" property="orderType" />
+    <result column="business_type" jdbcType="TINYINT" property="businessType" />
+    <result column="sale_type" jdbcType="TINYINT" property="saleType" />
+    <result column="business_mode" jdbcType="TINYINT" property="businessMode" />
+    <result column="contract_on_or_off" jdbcType="TINYINT" property="contractOnOrOff" />
+    <result column="order_code" jdbcType="VARCHAR" property="orderCode" />
+    <result column="order_date" jdbcType="DATE" property="orderDate" />
+    <result column="manu_id" jdbcType="VARCHAR" property="manuId" />
+    <result column="manu_code" jdbcType="VARCHAR" property="manuCode" />
+    <result column="manu_name" jdbcType="VARCHAR" property="manuName" />
+    <result column="manu_mnem_code" jdbcType="VARCHAR" property="manuMnemCode" />
+    <result column="dealer_id" jdbcType="VARCHAR" property="dealerId" />
+    <result column="dealer_code" jdbcType="VARCHAR" property="dealerCode" />
+    <result column="dealer_name" jdbcType="VARCHAR" property="dealerName" />
+    <result column="dealer_mnem_code" jdbcType="VARCHAR" property="dealerMnemCode" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="org_code" jdbcType="VARCHAR" property="orgCode" />
+    <result column="org_name" jdbcType="VARCHAR" property="orgName" />
+    <result column="org_mnem_code" jdbcType="VARCHAR" property="orgMnemCode" />
+    <result column="person_id" jdbcType="VARCHAR" property="personId" />
+    <result column="person_code" jdbcType="VARCHAR" property="personCode" />
+    <result column="person_name" jdbcType="VARCHAR" property="personName" />
+    <result column="person_mnem_code" jdbcType="VARCHAR" property="personMnemCode" />
+    <result column="contract_no" jdbcType="VARCHAR" property="contractNo" />
+    <result column="pdf_url" jdbcType="VARCHAR" property="pdfUrl" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="post_code" jdbcType="VARCHAR" property="postCode" />
+    <result column="link_man" jdbcType="VARCHAR" property="linkMan" />
+    <result column="link_phone" jdbcType="VARCHAR" property="linkPhone" />
+    <result column="close_reason" jdbcType="VARCHAR" property="closeReason" />
+    <result column="order_state" jdbcType="TINYINT" property="orderState" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="maker_id" jdbcType="VARCHAR" property="makerId" />
+    <result column="maker" jdbcType="VARCHAR" property="maker" />
+    <result column="make_date" jdbcType="TIMESTAMP" property="makeDate" />
+    <result column="modify_id" jdbcType="VARCHAR" property="modifyId" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="check_id" jdbcType="VARCHAR" property="checkId" />
+    <result column="checker" jdbcType="VARCHAR" property="checker" />
+    <result column="check_date" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="confirm_id" jdbcType="VARCHAR" property="confirmId" />
+    <result column="confirmer" jdbcType="VARCHAR" property="confirmer" />
+    <result column="confirm_date" jdbcType="TIMESTAMP" property="confirmDate" />
+    <result column="sign_person_id" jdbcType="VARCHAR" property="signPersonId" />
+    <result column="sign_person" jdbcType="VARCHAR" property="signPerson" />
+    <result column="sign_date" jdbcType="TIMESTAMP" property="signDate" />
+    <result column="over_person_id" jdbcType="VARCHAR" property="overPersonId" />
+    <result column="over_person" jdbcType="VARCHAR" property="overPerson" />
+    <result column="over_date" jdbcType="TIMESTAMP" property="overDate" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

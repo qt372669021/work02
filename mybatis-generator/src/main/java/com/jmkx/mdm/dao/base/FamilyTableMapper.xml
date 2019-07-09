@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.mdm.dao.base.FamilyTableMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.mdm.pojo.base.DO.FamilyTable">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="oa_code" jdbcType="VARCHAR" property="oaCode" />
+    <result column="leader_name" jdbcType="VARCHAR" property="leaderName" />
+    <result column="q_or_shu" jdbcType="VARCHAR" property="qOrShu" />
+    <result column="call" jdbcType="VARCHAR" property="call" />
+    <result column="q_or_shu_oa_code" jdbcType="VARCHAR" property="qOrShuOaCode" />
+    <result column="q_or_shu_name" jdbcType="VARCHAR" property="qOrShuName" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="maker" jdbcType="VARCHAR" property="maker" />
+    <result column="maker_time" jdbcType="TIMESTAMP" property="makerTime" />
+    <result column="modifyer" jdbcType="VARCHAR" property="modifyer" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="dr" jdbcType="INTEGER" property="dr" />
+  </resultMap>
+</mapper>

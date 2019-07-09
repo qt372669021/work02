@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.FeaturesAgentMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.FeaturesAgent">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="features_id" jdbcType="VARCHAR" property="featuresId" />
+    <result column="manu_id" jdbcType="VARCHAR" property="manuId" />
+    <result column="manu_code" jdbcType="VARCHAR" property="manuCode" />
+    <result column="manu_name" jdbcType="VARCHAR" property="manuName" />
+    <result column="manu_mnem_code" jdbcType="VARCHAR" property="manuMnemCode" />
+    <result column="out_flow_side_id" jdbcType="VARCHAR" property="outFlowSideId" />
+    <result column="out_flow_side_code" jdbcType="VARCHAR" property="outFlowSideCode" />
+    <result column="out_flow_side_name" jdbcType="VARCHAR" property="outFlowSideName" />
+    <result column="out_flow_side_mnem_code" jdbcType="VARCHAR" property="outFlowSideMnemCode" />
+    <result column="in_flow_side_id" jdbcType="VARCHAR" property="inFlowSideId" />
+    <result column="in_flow_side_code" jdbcType="VARCHAR" property="inFlowSideCode" />
+    <result column="in_flow_side_name" jdbcType="VARCHAR" property="inFlowSideName" />
+    <result column="in_flow_side_mnem_code" jdbcType="VARCHAR" property="inFlowSideMnemCode" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="maker_id" jdbcType="VARCHAR" property="makerId" />
+    <result column="maker" jdbcType="VARCHAR" property="maker" />
+    <result column="make_date" jdbcType="TIMESTAMP" property="makeDate" />
+    <result column="modify_id" jdbcType="VARCHAR" property="modifyId" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="check_state" jdbcType="TINYINT" property="checkState" />
+    <result column="check_opinion" jdbcType="VARCHAR" property="checkOpinion" />
+    <result column="check_id" jdbcType="VARCHAR" property="checkId" />
+    <result column="checker" jdbcType="VARCHAR" property="checker" />
+    <result column="check_date" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

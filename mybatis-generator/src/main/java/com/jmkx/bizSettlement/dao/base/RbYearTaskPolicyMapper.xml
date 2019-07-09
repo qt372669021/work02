@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.RbYearTaskPolicyMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.RbYearTaskPolicy">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="manu_id" jdbcType="VARCHAR" property="manuId" />
+    <result column="manu_name" jdbcType="VARCHAR" property="manuName" />
+    <result column="manu_code" jdbcType="VARCHAR" property="manuCode" />
+    <result column="manu_mnem_code" jdbcType="VARCHAR" property="manuMnemCode" />
+    <result column="manage_id" jdbcType="VARCHAR" property="manageId" />
+    <result column="manage_code" jdbcType="VARCHAR" property="manageCode" />
+    <result column="manage_name" jdbcType="VARCHAR" property="manageName" />
+    <result column="dealer_id" jdbcType="VARCHAR" property="dealerId" />
+    <result column="dealer_code" jdbcType="VARCHAR" property="dealerCode" />
+    <result column="dealer_name" jdbcType="VARCHAR" property="dealerName" />
+    <result column="dealer_mnem_code" jdbcType="VARCHAR" property="dealerMnemCode" />
+    <result column="year" jdbcType="VARCHAR" property="year" />
+    <result column="task" jdbcType="DECIMAL" property="task" />
+    <result column="finish_rate" jdbcType="DECIMAL" property="finishRate" />
+    <result column="rebate_coeff" jdbcType="DECIMAL" property="rebateCoeff" />
+    <result column="calcula_type" jdbcType="TINYINT" property="calculaType" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="check_state" jdbcType="TINYINT" property="checkState" />
+    <result column="check_id" jdbcType="VARCHAR" property="checkId" />
+    <result column="check_name" jdbcType="VARCHAR" property="checkName" />
+    <result column="check_time" jdbcType="TIMESTAMP" property="checkTime" />
+    <result column="create_id" jdbcType="VARCHAR" property="createId" />
+    <result column="create_name" jdbcType="VARCHAR" property="createName" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_id" jdbcType="VARCHAR" property="modifyId" />
+    <result column="modify_name" jdbcType="VARCHAR" property="modifyName" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

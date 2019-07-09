@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.ManageMainMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.ManageMain">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="manage_main_id" jdbcType="VARCHAR" property="manageMainId" />
+    <result column="manage_main_code" jdbcType="VARCHAR" property="manageMainCode" />
+    <result column="manage_main_name" jdbcType="VARCHAR" property="manageMainName" />
+    <result column="system_ip" jdbcType="VARCHAR" property="systemIp" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="dr" jdbcType="TINYINT" property="dr" />
+  </resultMap>
+</mapper>

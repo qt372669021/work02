@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmkx.bizSettlement.dao.base.ManageLawMapper">
+  <resultMap id="BaseResultMap" type="com.jmkx.bizSettlement.pojo.base.DO.ManageLaw">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="manage_law_id" jdbcType="VARCHAR" property="manageLawId" />
+    <result column="manu_id" jdbcType="VARCHAR" property="manuId" />
+    <result column="manu_code" jdbcType="VARCHAR" property="manuCode" />
+    <result column="manu_name" jdbcType="VARCHAR" property="manuName" />
+    <result column="manage_main_id" jdbcType="VARCHAR" property="manageMainId" />
+    <result column="manage_main_code" jdbcType="VARCHAR" property="manageMainCode" />
+    <result column="manage_main_name" jdbcType="VARCHAR" property="manageMainName" />
+  </resultMap>
+</mapper>
