@@ -8,7 +8,7 @@
 
 	<properties>
 		<mapper.version>3.4.0</mapper.version>
-		<mysql.version>5.1.38</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<mybatis-version>3.4.1</mybatis-version>
 		<common-utils.version>1.0</common-utils.version>
 		<fastjson.version>1.2.31</fastjson.version>
